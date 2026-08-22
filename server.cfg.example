@@ -1,0 +1,66 @@
+# ===============================================================
+# server.cfg.example
+#
+# Copy this to server.cfg and fill in the placeholders.
+# server.cfg is gitignored and MUST NOT be committed — it holds
+# the licence key and the database password.
+#
+#   cp server.cfg.example server.cfg
+# ===============================================================
+
+# ---------------------------------------------------------------
+# Network
+# ---------------------------------------------------------------
+endpoint_add_tcp "0.0.0.0:30120"
+endpoint_add_udp "0.0.0.0:30120"
+
+sv_maxclients 48
+sv_endpointprivacy true
+sv_scriptHookAllowed 0
+
+# ---------------------------------------------------------------
+# Identity
+# ---------------------------------------------------------------
+sv_hostname "REPLACE_ME - server name"
+sets sv_projectName "REPLACE_ME"
+sets sv_projectDesc "REPLACE_ME - short description"
+sets locale "en-GB"
+# sets tags "roleplay, economy, serious"
+
+# ---------------------------------------------------------------
+# SECRET — get from https://keymaster.fivem.net
+# Never commit the real value.
+# ---------------------------------------------------------------
+sv_licenseKey "REPLACE_ME_LICENCE_KEY"
+
+# ---------------------------------------------------------------
+# SECRET — database. Never commit the real value.
+# ---------------------------------------------------------------
+set mysql_connection_string "mysql://DB_USER:DB_PASSWORD@127.0.0.1:3306/DB_NAME?charset=utf8mb4"
+
+# ---------------------------------------------------------------
+# Resource load order — THIS ORDER IS MANDATORY.
+# oxmysql -> ox_lib -> qbx_core -> ox_inventory
+# Anything starting before its dependency fails with "export is nil".
+# ---------------------------------------------------------------
+ensure oxmysql
+ensure ox_lib
+ensure qbx_core
+ensure ox_inventory
+
+# Everything else loads after ox_inventory.
+ensure ox_target
+
+# ---------------------------------------------------------------
+# Custom resources
+# Add each one here as it is built.
+# ---------------------------------------------------------------
+# ensure <resource_name>
+
+# ---------------------------------------------------------------
+# Permissions
+# Replace with the real identifiers of your admins.
+# ---------------------------------------------------------------
+add_ace group.admin command allow
+add_ace group.admin command.quit deny
+# add_principal identifier.fivem:REPLACE_ME group.admin

@@ -118,9 +118,12 @@ that ledger is unverified.
 ## Lua conventions
 
 - One resource per folder under `resources/[custom]/`.
-- Folder and file names are `snake_case`. Resource folders are prefixed to group
-  them by domain (e.g. `fyve_jobs_*`, `fyve_ui_*`) — pick the prefix once and
-  keep it.
+- Folder and file names are `snake_case`. Resource folders share one short
+  prefix so they group together and are distinguishable from vendored code
+  (e.g. `<prefix>_jobs_mechanic`, `<prefix>_ui_hud`).
+  **TODO: the prefix is not chosen yet.** It is not tied to the city name —
+  the city name is content and can change freely; the prefix is an identifier
+  that appears in event names and export calls, so it changes expensively.
 - **Every** resource has an `fxmanifest.lua`, and every manifest declares
   `lua54 'yes'` explicitly. No `__resource.lua`.
 - Standard file layout inside a resource:
@@ -169,6 +172,24 @@ test against right now.
   testable React are all in scope.
 - If a task requires runtime verification, say so and stop rather than shipping
   untested gameplay code that looks finished.
+
+---
+
+## Vendored third-party resources
+
+`qbx_core` and the ox resources are **copied into this repo** under
+`resources/[qbox]` and `resources/[ox]`. A clone is therefore runnable, and
+dev and production can never drift onto different versions.
+
+- **Never edit vendored code.** An upgrade replaces the folder wholesale and
+  silently reverts the change. Override from a custom resource, or keep a
+  documented patch under `tools/`.
+- Record the upstream commit for every vendored resource in
+  `docs/vendored-versions.md`. Upgrading is then a reviewable diff — which is
+  how a renamed column or a changed export signature gets caught *before*
+  deploy rather than at runtime with players connected.
+- These are copyleft-licensed. Irrelevant while this repo is private; verify
+  the specific licences before it is ever made public.
 
 ---
 

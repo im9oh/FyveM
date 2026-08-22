@@ -1,0 +1,58 @@
+# ---------------------------------------------------------------
+# SECRETS — never commit. server.cfg holds the licence key and the
+# database connection string. Only server.cfg.example is tracked.
+# ---------------------------------------------------------------
+server.cfg
+*.cfg
+!server.cfg.example
+!resources/**/*.cfg
+
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+*.p12
+
+# ---------------------------------------------------------------
+# FXServer runtime — never part of the repo
+# ---------------------------------------------------------------
+server-files/
+artifacts/
+alpine/
+run.sh
+run.cmd
+FXServer.exe
+cache/
+logs/
+*.log
+svadhesive/
+txData/
+
+# ---------------------------------------------------------------
+# Database dumps (may contain player data)
+# ---------------------------------------------------------------
+*.sql.gz
+dump/
+backups/
+
+# ---------------------------------------------------------------
+# NUI / React
+# ---------------------------------------------------------------
+node_modules/
+.vite/
+.parcel-cache/
+*.tsbuildinfo
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------------------------------------------------------------
+# Editors / OS
+# ---------------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
