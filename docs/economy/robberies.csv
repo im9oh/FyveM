@@ -1,15 +1,7 @@
-id,name,tier,crew_size,duration_min,gear_required,cooldown,police_online_required,risk,payout_TBD,suggested_range,pays_in,notes
-rob_atm,ATM Crack,petty,1,2,drill,10 min per machine,0,low,TBD,800-1500,cash,Filler activity. Should never be worth grinding.
-rob_till,Corner Store Till,petty,1,3,any weapon,20 min,1,low,TBD,2500-4000,cash,The first crime a new player commits.
-rob_laundro,Laundromat Back Room,petty,1,5,lockpick,30 min,1,low,TBD,4000-7000,cash,Cash business. No alarm if lockpicked cleanly.
-rob_pharm,Pharmacy Narcotics Cabinet,low,1-2,6,lockpick + bag,45 min,2,medium,TBD,6000-10000,cash + drugs,Mixed payout. Drugs must be sold on separately.
-rob_fuel,Fuel Station Safe,low,2,8,drill,45 min,2,medium,TBD,9000-15000,cash,
-rob_pawn,Pawn Shop Vault,mid,2-3,12,thermal lance,90 min,3,medium,TBD,20000-35000,cash + goods,
-rob_jewel,Jewellery Store Smash,mid,3-4,10,drill + bags,2 hours,3,high,TBD,45000-70000,goods,Loud from second one. Timed escape.
-rob_van,Armoured Transit Ambush,mid,3-4,15,heavy weapons + blocker vehicle,2 hours,4,high,TBD,60000-90000,cash,Moving target. Route is randomised.
-rob_gallery,Art Gallery Night Job,mid,3-4,20,lockpick + cutter,3 hours,3,high,TBD,70000-110000,goods,Stealth only. Triggering the alarm voids the payout.
-rob_docks,Dockside Container Lift,mid,3-5,25,forklift + truck,3 hours,3,medium,TBD,55000-85000,goods,Slow burn. Needs a buyer lined up.
-rob_guns,Weapons Shipment Intercept,mid,3-4,15,heavy weapons,4 hours,4,high,TBD,0,GUNS ONLY,Pays in weapons not money. Feeds the crime economy without inflating currency.
-rob_data,Corporate Server Room,mid,2-3,18,hacking device,4 hours,3,medium,TBD,50000-80000,data (sold to buyer),Payout depends on finding a buyer. Adds an RP layer.
-rob_casino,Casino Cage,high,4-6,35,full kit + planning phase,8 hours,5,extreme,TBD,180000-280000,cash,Requires a planning stage before the job can start.
-rob_bank,Central Bank Vault,high,5-6,45,full kit + thermite + planning,12 hours,6,extreme,TBD,300000-450000,cash,The top job. Split across the crew. Long cooldown.
+id,name,tier,crew_size,duration_min,gear_required,cooldown,police_online_required,risk,payout_TBD,suggested_range,pays_in,new_mechanic,notes
+rob_till,Corner Store Till,petty,1,3,any weapon,20 min,1,low,TBD,2500-4000,cash,Solo hold-up. Intimidation only.,The first crime a new player commits. Deliberately small.
+rob_fuel,Fuel Station Safe,low,2,8,drill,45 min,2,medium,TBD,9000-15000,cash,Timed minigame + silent alarm.,Fixed location. The template every other heist is built from.
+rob_pawn,Pawn Shop Vault,mid,2-3,12,thermal lance,90 min,3,medium,TBD,20000-35000,goods,Loot must be fenced separately.,Pays in goods so the cash only appears after a second RP step.
+rob_jewel,Jewellery Store Smash,mid,3-4,10,drill + bags,2 hours,3,high,TBD,45000-70000,goods,Loud from second one. Escape timer.,Multiple loot cases. Payout scales with how many you clear before the timer.
+rob_van,Armoured Transit Ambush,mid,3-4,15,heavy weapons + blocker vehicle,2 hours,4,high,TBD,60000-90000,cash,Moving target on a randomised route.,No fixed location. Needs a live vehicle and NPC guards.
+rob_bank,Central Bank Vault,high,5-6,45,full kit + thermite + planning,12 hours,6,extreme,TBD,300000-450000,cash,Multi-stage with a planning phase.,The top job. Split across the crew. Long cooldown.
