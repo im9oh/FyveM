@@ -1,0 +1,25 @@
+sink,category,amount,basis,frequency,scales_with_wealth,notes
+Apartment rent,Housing,3000,flat,weekly,no,Starter housing. First week free.
+House rent / tax,Housing,10000,flat,weekly,partly,
+Mansion / estate tax,Housing,35000,flat,weekly,yes,
+Vehicle insurance,Vehicle,1.5% of vehicle value,percent,weekly per vehicle,YES,THE load-bearing sink. A 3M car costs 45000 a week just to sit there.
+Garage storage,Vehicle,500,flat per vehicle,weekly,yes (by count),Punishes hoarding twelve cars.
+Fuel,Vehicle,2 per litre (~130 a fill),usage,per session,yes,High performance cars drink more. Rich players burn more.
+Repair - minor,Vehicle,3% of vehicle value,percent,per incident,YES,
+Repair - major,Vehicle,12% of vehicle value,percent,per incident,YES,Self-inflicted and scales perfectly. Best sink in the game.
+Repair - modded parts,Vehicle,18% of vehicle value,percent,per incident,YES,Imported parts cost more. Makes modded ownership a commitment.
+Impound release,Vehicle,2500 + 500/day,flat,per incident,no,
+Vehicle transfer tax,Vehicle,7% of sale price,percent,per player-to-player sale,YES,Removes money on every resale. Stops cars circulating tax-free.
+Medical - revived by EMS,Life,5000,flat,per death,no,
+Medical - bled out,Life,20000,flat,per death,no,Steep on purpose. Makes calling EMS the correct RP choice.
+Ammo - pistol,Combat,8,per round,per fight,no,
+Ammo - rifle,Combat,25,per round,per fight,no,
+Weapon purchase,Combat,3500-45000,flat,rare,no,
+Fine - misdemeanour,Legal,3000-8000,flat,per arrest,no,
+Fine - felony,Legal,25000-60000,flat,per arrest,no,
+Lawyer fees,Legal,15000,flat,per case,no,
+Licence renewal,Legal,2500-10000,flat,periodic,no,"Driving, weapon, pilot. Small but constant."
+Business wages,Business,varies,percent of revenue,weekly,YES,
+Business stock / restock,Business,varies,percent of revenue,weekly,YES,
+Car mods & cosmetics,Luxury,5000-150000,flat,optional,yes,
+Clothing / tattoos / plates,Luxury,500-15000,flat,optional,no,Pure vanity drain. Keep it well stocked.

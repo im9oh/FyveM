@@ -1,0 +1,21 @@
+source,category,gate,gross_per_hour,cost_per_hour,net_per_hour,variance,afk_risk,afk_notes
+Delivery driving,Legal entry,none,1400,200,1200,none,MEDIUM,Autopilot/route macros. Require manual load+unload interaction at each stop.
+Taxi,Legal entry,none,1300,200,1100,low,LOW,Needs real passengers. Do not pay for empty circling.
+Bus route,Legal entry,none,1200,150,1050,none,HIGH,Fixed repeating route is trivially macro-able. Randomise stops or drop it.
+Garbage,Legal entry,none,1500,250,1250,none,MEDIUM,Repetitive pickup loop. Vary spawn points.
+Fishing,Legal grind,rod+boat 8000,1600,300,1300,low,HIGH,Single repeated keypress. Needs minigame variance and per-hour diminishing returns.
+Mining,Legal grind,pickaxe 2000,1500,100,1400,low,HIGH,Same as fishing. Worst offender historically.
+Hunting,Legal grind,rifle+licence 12000,1700,350,1350,medium,MEDIUM,Animal spawns force movement. Safer than fishing.
+Farming,Legal grind,land lease,1500,300,1200,low,HIGH,Growth timers pay for being logged in. Require harvest interaction only.
+Mechanic employee,Legal skilled,training,1900,100,1800,low,LOW,Requires another player to have a broken car. Self-limiting.
+Mechanic shop owner,Business,shop 250000,3400,1200,2200,medium,LOW,Wages+parts+rent already deducted.
+Real estate agent,Legal skilled,licence 50000,2600,200,2400,high,LOW,Commission only. No sale no pay.
+Bar / club owner,Business,venue 400000,4000,1800,2200,medium,MEDIUM,Passive drink sales must be capped and require staff online.
+EMS,Whitelist,application,2000,0,2000,none,CRITICAL,Timer salary is the classic AFK farm. Pay per completed call NOT per minute connected.
+Police,Whitelist,application,2000,0,2000,none,CRITICAL,Same as EMS. Pay per report filed / arrest processed.
+Store robbery,Crime low,pistol,2800,400,1600,high,LOW,Expected value after arrest chance and fines.
+Vehicle theft / chop,Crime low,tools,3200,400,2000,high,MEDIUM,Chop shop payout must require driving it there manually.
+House robbery,Crime mid,crew + tools,4500,800,2800,high,LOW,
+Drug sales,Crime mid,product,4000,600,2600,high,MEDIUM,Do not pay for standing in a zone. Require an NPC/player transaction.
+Drug production,Crime mid,lab 180000,5000,2000,2400,high,HIGH,Offline or idle production timers print money for doing nothing. Requires active tending.
+Bank heist,Crime high,crew 4+ / gear,22000,5000,6000,extreme,LOW,Long cooldown. Big loss on failure. The highest ceiling in the game.

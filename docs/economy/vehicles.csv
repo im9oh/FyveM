@@ -1,0 +1,9 @@
+tier,catalogue,price_low,price_high,examples,honest_hours_gross,notes
+Beater,PDM (vanilla),8000,20000,"Blista, Asea, Faction, Emperor, Premier",7,First car. Should be affordable in week 1.
+Daily,PDM (vanilla),25000,60000,"Sultan, Futo GTX, Buffalo STX, Warrener, Kuruma",21,The honest worker's car. Reachable in a month casual.
+Good vanilla,PDM (vanilla),80000,150000,"Elegy RH8, Comet, Jester, Dominator GTT, Sultan RS",63,Fast and fun. Still explicitly not aspirational.
+Vanilla top,PDM (vanilla),200000,300000,"T20, Zentorno, Krieger, Deveste, Itali GTB",125,"DELIBERATELY CAPPED. A vanilla supercar must never cost more than an entry modded car, or players stop grinding for modded."
+Modded A,Import dealer,400000,700000,"Skyline R34, Supra MK4, RX-7 FD, E46 M3, Evo IX, S15",250,The attainable dream. First modded car. This is the real 'I made it'.
+Modded B,Import dealer,900000,1800000,"GT-R R35, RS6, C63 AMG, M4 Comp, 992 Carrera",750,Serious money. Business owner or successful criminal territory.
+Modded C,Import dealer,2500000,5000000,"Huracan, 720S, GT3 RS, Urus, F8",2100,Top of the city. Should be countable on two hands server-wide.
+Modded D,Not for sale,0,0,"One-offs, event prizes, hand-built",0,NEVER purchasable. Won, awarded, or built. This is what stops the ladder having a top rung you can simply buy.
